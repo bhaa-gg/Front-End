@@ -1,0 +1,137 @@
+section {
+    background-image: url("img/night-background-ed1nlm097pyl0vcu.webp");
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.quotes {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 65%;
+    min-height: 60vh;
+}
+
+p {
+    line-height: 200% !important;
+    word-spacing: 10px;
+    letter-spacing: 2.5px;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-top: 20px !important;
+}
+
+
+span::before
+{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    transition: 0.5s;
+}
+span::after
+{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    transition: 0.5s;
+}
+span:hover::after,span:hover::before
+{
+    
+    width:50%;
+}
+
+
+p:hover {
+    transform: scale(1.5) translateY(25px);
+    box-shadow: 0px -2px 103px 16px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 0px -2px 103px 16px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px -2px 103px 16px rgba(0,0,0,0.54);
+    background-color: white;
+}
+
+.fc
+{
+    width: fit-content;
+}
+.btnn {
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 50em;
+    border-bottom-right-radius: 0px ;
+    border-top-left-radius: 0px ;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+
+.btn {
+    width: 10% !important;
+    padding: 0 !important;
+    background-color: rgba(0, 0, 0, 0.4)  !important;
+    border-bottom-right-radius: 0px !important ;
+    border-top-left-radius: 0px !important ;
+    transition: 1s;
+    font-weight: bold;
+}
+.btn:focus {
+    color: black !important;
+}
+.btn::after {
+    content: "C";
+}
+.btn:hover:after {
+    content: "Copy";
+}
+.btn:hover{
+    width: 15% !important ;
+}
+
+.btnn:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    color: black;
+    box-shadow: 0px -2px 103px 16px rgba(255,255,255,0.54);
+    -webkit-box-shadow: 0px -2px 103px 16px rgba(255,255,255,0.54);
+    -moz-box-shadow: 0px -2px 103px 16px rgba(255,255,255,0.54);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+
+img{
+    height: 200px;
+    width: 200px ;
+}
+
+@media (max-width: 1000px) {
+    .quotes
+    {
+        width: 100%;
+    }
+    p:hover {
+        transform: scale(1.2) translateY(25px);
+    }
+    
+    
+}
